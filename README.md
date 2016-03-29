@@ -1,2 +1,2 @@
 # ngEx
-A sample node-angular application
+Hello!!! Welcome to my first angular-mode app...
