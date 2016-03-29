@@ -1,0 +1,29 @@
+{
+  "name": "ngex",
+  "version": "1.0.0",
+  "description": "Hello!!! Welcome to my first angular-mode app...",
+  "main": "server/index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "bower install",
+    "start":"node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjco/ngEx.git"
+  },
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "author": "satya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjco/ngEx/issues"
+  },
+  "homepage": "https://github.com/sjco/ngEx#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
