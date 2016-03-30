@@ -4,19 +4,21 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
+		<title>mLibrary</title>
 
 		<!-- Bootstrap CSS -->
 		<!-- Latest compiled and minified CSS & JS -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
 	</head>
-	<body ng-app="ngEx">
+	<body ng-app="mLib">
 
 	<div id="wrapper">
 		<div id="header">
@@ -30,24 +32,25 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Title</a>
+						<a class="navbar-brand" href="#">mLibrary<sup>v1.0</sup></a>
 					</div>
 			
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
+							<li class="active"><a href="#">Dashboard</a></li>
+							<li><a href="#/books">Books</a></li>
+							<li><a href="#/authors">Authors</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Link</a></li>
+							<li><a href="#/user/alerts">Notitifcations</a></li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">{{}}<b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li><a href="#">Separated link</a></li>
+									<li><a href="#/user/profile">My Profile</a></li>
+									<li><a href="#/user/books">My Books</a></li>
+									<li><a href="#/user/wallet">Wallet</a></li>
+									<li><a href="#/logout">Sign Out</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -72,6 +75,21 @@
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
+	<!-- user scripts -->
+	<script type="text/javascript" src="app.js"></script>
+
+	<!-- services -->
+	<script type="text/javascript" src="scripts/components/services/dashboard.service.js"></script>
+	<script type="text/javascript" src="scripts/components/services/book.service.js"></script>
+	
+	<!-- controllers -->
+	<script type="text/javascript" src="scripts/app/dashboard/dashboard.controller.js"></script>
+    <script type="text/javascript" src="scripts/app/books/book.controller.js"></script>
+	<!-- routes -->
+	<script type="text/javascript" src="scripts/app/dashboard/dashboard.js"></script>
+	<script type="text/javascript" src="scripts/app/books/book.js"></script>
 	</body>
 </html>

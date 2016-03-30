@@ -1,15 +1,6 @@
-var express = require('express');
-var router = express.Router();
+var router = require('express').Router();
 
-/*
- * GET userlist.
- */
-router.get('/userlist', function(req, res) {
-    var db = req.db;
-    var collection = db.get('userlist');
-    collection.find({},{},function(e,docs){
-        res.json(docs);
-    });
-});
+router.use('/books', require('./book')); 
+//router.use('/products', require('./products'));
 
 module.exports = router;

@@ -1,0 +1,48 @@
+
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close">&times;</button>
+				<h4 class="modal-title">Book</h4>
+			</div>
+			<div class="pad modal-body">
+				<form novalidate show-validation class="form-horizontal" role="form">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="form-group">
+								<label>ID</label>
+								<input type="text" class="form-control"  ng-model="book.id" ng-disabled="true">
+							</div>	
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="form-group">
+								<label>Title</label>
+								<input type="text" class="form-control" ng-model="book.title" ng-disabled="true">
+							</div>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="form-group">
+								<label>Author</label>
+								<input type="text" class="form-control"  ng-model="book.author" ng-disabled="true">
+							</div>	
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="form-group">
+								<label>Price</label>
+								<input type="text" class="form-control" ng-model="book.price" ng-disabled="true">
+							</div>	
+						</div>
+					</div>
+					<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
